@@ -1,0 +1,60 @@
+#include <stdio.h>
+int main()
+{
+//     //  Formatted Bio Output
+    int age = 23;
+    float mypercentage = 8.1342;
+    char myinisiual = 'M';
+    printf("1 my age %d\nmy persentage in BCA %.2f \nmy first word of my name %c",age,mypercentage,myinisiual);
+
+//     // ASCII Character Shift
+    char one = 'A';
+    one = one + 3;
+    printf("\n\n2 hello my name is agent %d and %c",one,one);
+
+//     // Precision Control
+    float value = 3.14159265;
+    printf("\n3 %.2f %.4f",value,value);
+
+//     // Memory Size Inspection
+    int myint;
+    float myfloat;
+    char mychar;
+    printf("\n4 %zu %zu %zu",sizeof(myint),sizeof(myfloat),sizeof(mychar));
+
+//     //  Division Behavior and Type Casting
+    int value1 = 7;
+    int value2 = 2;
+    float result = value1 / value2;
+    printf("\n5 the division of value1 = %d / %d the division of value2 is %.2f",value1,value2,result);
+
+//     // Temperature Conversion
+    float Fahrenheit = 78.8;
+    int Celsius;
+    Celsius = Fahrenheit - 32;
+    Celsius = Celsius * 5/9;
+    printf("\n6 if the Fahrenheit %.3f so this is the %d Celsius",Fahrenheit,Celsius);
+
+//     // Constant Declaration Methods
+    float pi = 3.14;
+    float radius = 8.22;
+    float area = pi * radius * radius;
+    printf("\n7 so the radius of a circle is %f \nand the area of a circle is %.4f",radius,area); 
+
+//     // Arithmetic Swap
+    int a = 15;
+    int b = 25; 
+    int Swap;
+    Swap = a;
+    a = b;
+    b = Swap;
+    printf("\n\n8 now the a is %d and the b is %d",a,b);
+
+//     // Three-Digit Extraction
+    int value3 = 482;
+    int first = value3 / 100;
+    int middle = (value3 / 10) % 10;
+    int last = value3 % 10;
+    printf("\n%d this the value and this the %d \nfirst value %d this is the secound value %d\nthis the lastone",value3,first,middle,last);
+    return 0;
+}
